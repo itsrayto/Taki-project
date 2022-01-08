@@ -613,7 +613,7 @@ int gameTurn(GAME_INFO* gameInfo, PLAYER* player)
 			setCardColor(card);
 			placeCard(gameInfo, card);
 			removeCard(player, input - 1);
-			if (player->inTaki == true) // if player was in TAKI-card effect, it now exists the TAKI-card effect
+			if (player->inTaki == true) // if player was in TAKI-card effect, it now exits the TAKI-card effect
 			{
 				player->inTaki = false;
 				player->lastCardType = 0; // resets the last card in the "TAKI fall" that was saved
